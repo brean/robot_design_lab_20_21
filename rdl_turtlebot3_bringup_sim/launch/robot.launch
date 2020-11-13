@@ -4,7 +4,7 @@
     <!-- bringup a turtlebot3 burger with camera in simulation with gazebo -->
 
     <!-- Arguments -->
-    <arg name="model" default="simplified_burger" /> <!-- options: burger, simplified_burger (use latest to save resources)-->
+    <arg name="model" default="simplified_burger" /> <!-- options: burger, simplified_burger (use the latter to save resources)-->
     <arg name="x_pos" default="0.0"/>
     <arg name="y_pos" default="0.0"/>
     <arg name="gazebo_gui" default="true"/>
