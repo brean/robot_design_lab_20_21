@@ -122,6 +122,30 @@
     <origin xyz="-0.081 0 -0.004" rpy="-1.57 0 0"/>
   </joint>
 
+  <!-- tag required by ros control for individual joint control -->
+  <transmission name="wheel_left_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_left_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_left">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- tag required by ros control for individual joint control -->
+  <transmission name="wheel_right_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_right_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_right">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
   <link name="caster_back_link">
     <collision>
       <origin xyz="0 0.001 0" rpy="0 0 0"/>

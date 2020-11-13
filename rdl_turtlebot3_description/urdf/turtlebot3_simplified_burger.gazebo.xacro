@@ -39,7 +39,7 @@
     <material>Gazebo/FlatBlack</material>
   </gazebo>
 
-  <gazebo>
+  <!--gazebo>
     <plugin name="turtlebot3_burger_controller" filename="libgazebo_ros_diff_drive.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
@@ -59,6 +59,13 @@
       <wheelAcceleration>1</wheelAcceleration>
       <wheelTorque>10</wheelTorque>
       <rosDebugLevel>na</rosDebugLevel>
+    </plugin>
+  </gazebo-->
+
+  <!-- ROS Control plugin for Gazebo -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/turtlebot3_burger</robotNamespace>
     </plugin>
   </gazebo>
 
