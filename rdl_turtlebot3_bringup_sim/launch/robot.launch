@@ -29,4 +29,8 @@
         <param name="publish_frequency" type="double" value="50.0" />
     </node>
 
+    <!-- start the scanning -->
+    <include file="$(find rdl_turtlebot3_navigation)/launch/mapping.launch">
+    </include>
+
 </launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="scan_topic" default="/scan" />
+
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <param name="~particles" value="1" />
+        <param name="~delta" value=".3" />
+        <param name="~occ_thresh" value="10.0" />
+    </node>
+</launch>
