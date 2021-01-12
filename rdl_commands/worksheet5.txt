@@ -1,0 +1,8 @@
+# as always source the workspace first 
+source ~/catkin_ws/devel/setup.bash
+
+# start the simulation (without showing it)
+roslaunch rdl_turtlebot3_bringup_sim robot.launch gazebo_gui:=false
+
+# start rviz with navigation
+rosrun rviz rviz --display-config `rospack find rdl_turtlebot3_navigation`/config/navigation.rviz

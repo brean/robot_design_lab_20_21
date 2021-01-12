@@ -5,8 +5,8 @@
 
     <!-- Arguments -->
     <arg name="model" default="simplified_burger" /> <!-- options: burger, simplified_burger (use the latter to save resources)-->
-    <arg name="x_pos" default="0.0"/>
-    <arg name="y_pos" default="0.0"/>
+    <arg name="x_pos" default="1.5"/>
+    <arg name="y_pos" default="1.5"/>
     <arg name="gazebo_gui" default="true"/>
     <arg name="world_name" default="turtlebot3_world"/> <!-- options: turtlebot3_world, empty (see rdl_sim_worlds) -->
 
@@ -30,7 +30,7 @@
     </node>
 
     <!-- start the scanning -->
-    <include file="$(find rdl_turtlebot3_navigation)/launch/mapping.launch">
+    <include file="$(find rdl_turtlebot3_navigation)/launch/amcl.launch">
     </include>
 
 </launch>
