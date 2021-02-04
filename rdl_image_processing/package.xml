@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>rdl_image_processing</name>
+    <version>0.0.1</version>
+    <description>
+        process image data
+
+        Robot Design Lab - University of Bremen lecture - lab material.
+    </description>
+
+    <maintainer email="andras.bresser@dfki.de">Andreas Bresser</maintainer>
+
+    <license>GPLv3</license>
+
+    <author email="andras.bresser@dfki.de">Andreas Bresser</author>
+
+    <build_depend>sensor_msgs</build_depend>
+    <buildtool_depend>catkin</buildtool_depend>
+    <buildtool_depend>cv_bridge</buildtool_depend>
+
+    <run_depend>sensor_msgs</run_depend>
+    <run_depend>std_msgs</run_depend>
+    <run_depend>cv_bridge</run_depend>
+</package>
